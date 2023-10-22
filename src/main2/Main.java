@@ -4,7 +4,7 @@ package main2;
 // Вывести результат действия. Используйте конструкции if -else, case.
 import java.util.Scanner;
 
-public class Main2 {
+public class Main {
 
     public static void main(String[] args) {
 
