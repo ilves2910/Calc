@@ -18,22 +18,41 @@ public class Main {
 
         System.out.print("Какую операцию необходимо выполнить:\n 1 - сложение\n 2 - вычитание\n " +
                 "3 - умножение \n 4 - деление\n");
-        int h = scanner.nextInt();
+       int h = scanner.nextInt();
 
-       if (h==1)
-        {
+       if (h == 1) {
             System.out.println("Результат сложения: " + (a + b));
-        }
-        else if (h==2)
-        {
+        } else if (h == 2) {
             System.out.println("Результат вычитания: " + (a - b));
-        }else if (h==3)
-        {
+        } else if (h == 3) {
             System.out.println("Результат умножения: " + (a * b));
-        }else
-        {
-            System.out.println("Результат деления: " + (a / b));
-        }
-        scanner.close();
+        } else if (h == 4) {
+            if (b!=0) {
+            System.out.println("Результат деления: " + (a / b));}
+            else System.out.println("Нельзя делить на ноль");
+        } else System.out.println("Введите номер операции с 1 до 4");
+            h = scanner.nextInt();
+    scanner.close();
+
+        //switch (h) {
+        //   case 1:
+        //     System.out.println("Результат сложения: " + (a + b));
+        //   break;
+        //case 2:
+        //  System.out.println("Результат вычитания: " + (a - b));
+        //break;
+        // case 3:
+        //   System.out.println("Результат умножения: " + (a * b));
+        // break;
+        //case 4:
+        //  if (b != 0) {
+        //    System.out.println("Результат деления: " + (a / b));
+        //} else {
+        //  System.out.println("Нельзя делить на 0");
+        // }
+        // break;
+        //default:
+        //  System.out.println("Выберите от 1 до 4");
+        //h = scanner.nextInt();}
     }
 }
